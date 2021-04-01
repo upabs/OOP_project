@@ -34,5 +34,4 @@
 
 5. Đặt thêm tối thiểu camera và ở đâu để nhìn hết phòng
 
-6. Cố định số camera, đặt đâu vùng nhìn max
 
