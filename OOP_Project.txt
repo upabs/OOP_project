@@ -1,0 +1,38 @@
+1. Phòng
+1.1. tạo phòng
+	- chiều cao
+	- chiều rộng, chiều dài
+1.2. Thêm đồ vật
+	- chiều cao
+	- 4 đỉnh đáy
+     ---> kiểm tra nó là hình hộp chữ nhật ?
+
+	- kiểm tra: trong phòng , trên sàn (dính trên đồ vật khác)
+     		3 điều kiện: 
+			+ kiểm tra các điểm thuộc phòng k? : dùng khoảng cách:
+			+ kiểm tra trên mặt vật khác (hoặc sàn): dùng tâm mặt đáy vật cần ktra thuộc mặt trên 1 vật khác 
+			+ kiểm tra có bị vướng không: chiếu
+	- 
+ 
+1.3. Thêm camera
+	- tọa độ  --> kiểm tra thuộc tường không
+	- góc nhìn (0, 90)
+	- tầm xa < 100m
+	- 
+
+2. Xác định loại điểm
+	- thuộc vật thể 
+	- không thuộc vật thể  
+		+ vùng nhìn thấy 
+		+ vùng che khuất  -- đường thằng giữa điểm đó vs camera có cắt 1 vật nào đó ko
+
+3. Vùng khuất
+	- 5 hình chiếu
+	- màu đen
+
+4. Đặt camera ở đâu thể tích vùng nhìn thấy max
+
+5. Đặt thêm tối thiểu camera và ở đâu để nhìn hết phòng
+
+6. Cố định số camera, đặt đâu vùng nhìn max
+
