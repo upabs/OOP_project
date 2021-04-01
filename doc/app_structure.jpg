@@ -1,0 +1,78 @@
+--------------------------------
+	version 1
+--------------------------------
+	-- : package
+	~  : class
+	-  : private
+	+  : public
+--------------------------------
+
+-- src
+	-- controller
+		~ AppController.java
+			- view: AppView
+			- room: Room
+
+	-- model
+		~ ToaDo.java
+			- x, y, z: double
+			
+			+ ToaDo(x: double, y: double, z: double)
+			+ khoangCach(t: ToaDo): double
+			
+		~ MatPhang.java
+			- phapTuyen: ToaDo
+			- diemThuoc: ToaDo
+		
+		~ HinhHopChuNhat.java
+			- CacDinh: ToaDo[8]
+			- chieuCao: double
+			- cacMatPhang: MatPhang[6]
+			
+			+ theTich(): Double
+			+ viTri(): ToaDo
+			+ laHinhHopChuNhat(): boolean
+			+ PhanLoaiDiem(m: ToaDo): AppConstant.viTri
+			+ chieu(): void
+		
+		~ DoVat.java extends HinhHopChuNhat
+			- ten: String
+			- mauSac: AppConstant.mauSac
+		
+		~ Room.java extends HinhHopChuNhat
+			- danhSachDoVat: List<DoVat> (ArrayList<DoVat>)
+			- danhSachCamera: List<Camera> (ArrayList<Camera>)
+			
+			+ Room(dai: double, rong: double, cao: double)
+			+ themDoVat(v: DoVat): boolean
+			+ kiemTraDoVat(v: DoVat): boolean
+			+ themCamera(c: Camera): boolean
+			+ kiemTraCamera(c: Camera): boolean
+		
+		~ Camera.java
+			- toaDo: ToaDo
+			- tamNhin: double
+			- gocNhin: double
+			
+			+ Camera(td: ToaDo, tamNhin: double, gocNhin: double)
+			+ nhinThay(diem: ToaDo): boolean
+			+ nhinThay(doVat: DoVat): boolean
+
+	-- view
+		~ AppView.java		
+	
+	-- constant
+		~ AppConstant.java
+			+ viTriDiemSoVoiDoVat: enum
+			+ mauSac: enum
+			
+	-- test
+
+	~ App.java (main)
+	
+	
+	
+	
+	
+	
+	
